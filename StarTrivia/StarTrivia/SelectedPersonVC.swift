@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SelectedPersonVC.swift
 //  StarTrivia
 //
 //  Created by Nicholas Coggin on 3/7/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SelectedPersonVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
