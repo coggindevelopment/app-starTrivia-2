@@ -12,6 +12,9 @@
 		A39DD67522313EAA00D560BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39DD67322313EAA00D560BD /* Main.storyboard */; };
 		A39DD67722313EAB00D560BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A39DD67622313EAB00D560BD /* Assets.xcassets */; };
 		A39DD67A22313EAB00D560BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39DD67822313EAB00D560BD /* LaunchScreen.storyboard */; };
+		A39DD683223141B000D560BD /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A39DD681223141B000D560BD /* Starjhol.ttf */; };
+		A39DD684223141B000D560BD /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A39DD682223141B000D560BD /* Starjedi.ttf */; };
+		A39DD686223141BB00D560BD /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A39DD685223141BB00D560BD /* Starjout.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		A39DD67622313EAB00D560BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A39DD67922313EAB00D560BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A39DD67B22313EAB00D560BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A39DD681223141B000D560BD /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
+		A39DD682223141B000D560BD /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
+		A39DD685223141BB00D560BD /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,57 @@
 		A39DD66E22313EAA00D560BD /* StarTrivia */ = {
 			isa = PBXGroup;
 			children = (
+				A39DD68B223141EE00D560BD /* Model */,
+				A39DD68A223141E700D560BD /* View */,
+				A39DD689223141DE00D560BD /* Controller */,
 				A39DD66F22313EAA00D560BD /* AppDelegate.swift */,
 				A39DD67122313EAA00D560BD /* SelectedPersonVC.swift */,
+				A39DD688223141CE00D560BD /* Resources */,
 				A39DD67322313EAA00D560BD /* Main.storyboard */,
 				A39DD67622313EAB00D560BD /* Assets.xcassets */,
 				A39DD67822313EAB00D560BD /* LaunchScreen.storyboard */,
 				A39DD67B22313EAB00D560BD /* Info.plist */,
 			);
 			path = StarTrivia;
+			sourceTree = "<group>";
+		};
+		A39DD687223141C000D560BD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A39DD682223141B000D560BD /* Starjedi.ttf */,
+				A39DD685223141BB00D560BD /* Starjout.ttf */,
+				A39DD681223141B000D560BD /* Starjhol.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A39DD688223141CE00D560BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A39DD687223141C000D560BD /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A39DD689223141DE00D560BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A39DD68A223141E700D560BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A39DD68B223141EE00D560BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +174,9 @@
 				A39DD67A22313EAB00D560BD /* LaunchScreen.storyboard in Resources */,
 				A39DD67722313EAB00D560BD /* Assets.xcassets in Resources */,
 				A39DD67522313EAA00D560BD /* Main.storyboard in Resources */,
+				A39DD684223141B000D560BD /* Starjedi.ttf in Resources */,
+				A39DD686223141BB00D560BD /* Starjout.ttf in Resources */,
+				A39DD683223141B000D560BD /* Starjhol.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
