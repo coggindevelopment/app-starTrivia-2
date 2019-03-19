@@ -7,38 +7,59 @@
 //
 
 import Foundation
+import Alamofire
 
 class PersonApi {
     
-    func getRandomPersonUrlSession(id: Int, completion: @escaping PersonResponseCompletion) {
+    // Web request with Alamofire
+    func getRandomPersonAlamo(id: Int, completion: @escaping PersonResponseCompletion) {
         
         guard let url = URL(string: "\(PERSON_URL)\(id)") else { return }
-        
-        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-            
-            guard error == nil else {
-                debugPrint(error.debugDescription)
+        AF.request(url).responseJSON { (response) in
+            if let error = response.result.error {
+                debugPrint(error.localizedDescription)
                 completion(nil)
                 return
             }
             
-            guard let data = data else { return }
-            
-            do {
-                let jsonAny = try JSONSerialization.jsonObject(with: data, options: [])
-                guard let json = jsonAny as? [String: Any] else { return }
-                let person = self.parsePersonManual(json: json)
-                DispatchQueue.main.async {
-                    completion(person)
-                }
-            } catch {
-                debugPrint(error.localizedDescription)
-                return
+            guard let json = response.result.value as? [String: Any] else { return
+                completion(nil)}
+            let person = self.parsePersonManual(json: json)
+            completion(person)
             }
         }
-        task.resume()
-    }
     
+    
+    // Web request with URL Session
+//    func getRandomPersonUrlSession(id: Int, completion: @escaping PersonResponseCompletion) {
+//
+//        guard let url = URL(string: "\(PERSON_URL)\(id)") else { return }
+//
+//        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+//
+//            guard error == nil else {
+//                debugPrint(error.debugDescription)
+//                completion(nil)
+//                return
+//            }
+//
+//            guard let data = data else { return }
+//
+//            do {
+//                let jsonAny = try JSONSerialization.jsonObject(with: data, options: [])
+//                guard let json = jsonAny as? [String: Any] else { return }
+//                let person = self.parsePersonManual(json: json)
+//                DispatchQueue.main.async {
+//                    completion(person)
+//                }
+//            } catch {
+//                debugPrint(error.localizedDescription)
+//                return
+//            }
+//        }
+//        task.resume()
+//    }
+
     private func parsePersonManual(json: [String: Any]) -> Person {
         
         let name = json["name"] as? String ?? ""
