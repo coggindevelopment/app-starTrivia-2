@@ -17,6 +17,11 @@ class SelectedPersonVC: UIViewController {
     @IBOutlet weak var birthYearLbl: UILabel!
     @IBOutlet weak var genderLbl: UILabel!
     
+    @IBOutlet weak var homeworldBtn: UIButton!
+    @IBOutlet weak var vehiclesBtn: UIButton!
+    @IBOutlet weak var starshipsBtn: UIButton!
+    @IBOutlet weak var filmsBtn: UIButton!
+    
     var personApi = PersonApi()
     
     override func viewDidLoad() {
@@ -35,6 +40,22 @@ class SelectedPersonVC: UIViewController {
                 self.genderLbl.text = person.gender
             }
         }
+    }
+    
+    @IBAction func homeworldBtnTapped(_ sender: Any) {
+        
+    }
+    
+    @IBAction func vehiclesBtnTapped(_ sender: Any) {
+        
+    }
+    
+    @IBAction func starshipsBtnTapped(_ sender: Any) {
+        
+    }
+    
+    @IBAction func filmsBtnTapped(_ sender: Any) {
+        
     }
 }
 
