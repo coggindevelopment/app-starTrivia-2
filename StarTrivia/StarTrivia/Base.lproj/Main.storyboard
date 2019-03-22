@@ -26,7 +26,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space1" translatesAutoresizingMaskIntoConstraints="NO" id="6mm-c2-ib9">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space1" translatesAutoresizingMaskIntoConstraints="NO" id="6mm-c2-ib9">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Trivia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9EF-Pr-Zg2">
@@ -184,7 +184,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="RandomBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fb9-xg-Aiw"/>
+                                    <action selector="RandomBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iwe-lW-aRT"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDa-u7-Myh" customClass="BlackBgView" customModule="StarTrivia" customModuleProvider="target">
@@ -201,7 +201,6 @@
                                                 </constraints>
                                                 <state key="normal" image="homeworld-1"/>
                                                 <connections>
-                                                    <action selector="homeworldBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tqz-Oa-TRd"/>
                                                     <segue destination="iS7-h3-eTB" kind="show" identifier="toHomeworldVC" id="Cuk-rT-vXB"/>
                                                 </connections>
                                             </button>
@@ -213,7 +212,6 @@
                                                 </constraints>
                                                 <state key="normal" image="vehicles"/>
                                                 <connections>
-                                                    <action selector="vehiclesBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zE6-uV-hGo"/>
                                                     <segue destination="hqN-2q-Em5" kind="show" identifier="toVehiclesVC" id="uBx-bU-5BF"/>
                                                 </connections>
                                             </button>
@@ -225,7 +223,6 @@
                                                 </constraints>
                                                 <state key="normal" image="starships"/>
                                                 <connections>
-                                                    <action selector="starshipsBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nc8-fb-MYL"/>
                                                     <segue destination="cEf-M8-0EL" kind="show" identifier="toStarshipsVC" id="CHY-gi-Zc0"/>
                                                 </connections>
                                             </button>
@@ -237,8 +234,7 @@
                                                 </constraints>
                                                 <state key="normal" image="films"/>
                                                 <connections>
-                                                    <action selector="filmsBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3QO-7W-UJh"/>
-                                                    <segue destination="jaC-o3-JYd" kind="show" id="I3D-q8-iZ4"/>
+                                                    <segue destination="jaC-o3-JYd" kind="show" identifier="toFilmsVC" id="I3D-q8-iZ4"/>
                                                 </connections>
                                             </button>
                                         </subviews>

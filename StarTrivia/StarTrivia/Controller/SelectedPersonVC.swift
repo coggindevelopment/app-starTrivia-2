@@ -23,6 +23,7 @@ class SelectedPersonVC: UIViewController {
     @IBOutlet weak var filmsBtn: UIButton!
     
     var personApi = PersonApi()
+    var person: Person!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,7 @@ class SelectedPersonVC: UIViewController {
         personApi.getRandomPersonAlamo(id: random) { (person) in
             if let person = person {
                 self.setupView(person: person)
+                self.person = person
             }
         }
     }
@@ -51,20 +53,44 @@ class SelectedPersonVC: UIViewController {
         filmsBtn.isEnabled = !person.filmUrls.isEmpty
     }
     
-    @IBAction func homeworldBtnTapped(_ sender: Any) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        if var destination = segue.destination as? PersonProtocol {
+            destination.person = person
+        }
+        
+//        switch segue.identifier {
+//        case Segue.homeworld.rawValue:
+//            if let destination = segue.destination as? HomeworldVC {
+//                destination.person = person
+//            }
+//        case Segue.vehicles.rawValue:
+//            if let destination = segue.destination as? VehiclesVC {
+//                destination.person = person
+//            }
+//        case Segue.starships.rawValue:
+//            if let destination = segue.destination as? StarshipsVC {
+//                destination.person = person
+//            }
+//        case Segue.films.rawValue:
+//            if let destination = segue.destination as? FilmsVC {
+//                destination.person = person
+//            }
+//        default:
+//            break
+//        }
     }
     
-    @IBAction func vehiclesBtnTapped(_ sender: Any) {
-        
-    }
-    
-    @IBAction func starshipsBtnTapped(_ sender: Any) {
-        
-    }
-    
-    @IBAction func filmsBtnTapped(_ sender: Any) {
-        
-    }
+//    enum Segue : String {
+//        case homeworld = "toHomeworldVC"
+//        case vehicles = "toVehiclesVC"
+//        case starships = "toStarshipsVC"
+//        case films = "toFilmsVC"
+//    }
+
+}
+
+protocol PersonProtocol {
+    var person: Person! {get set}
 }
 
