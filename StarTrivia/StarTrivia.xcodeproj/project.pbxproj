@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		42720888441EF09C091BE901 /* Pods_StarTrivia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B79BCD498EC3DBB243DD6C6 /* Pods_StarTrivia.framework */; };
+		A359BE65224A3BB5008D2DE7 /* WhiteBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A359BE64224A3BB5008D2DE7 /* WhiteBgView.swift */; };
 		A37095752244F64300488678 /* HomeworldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37095742244F64300488678 /* HomeworldVC.swift */; };
 		A37095772244F65700488678 /* VehiclesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37095762244F65700488678 /* VehiclesVC.swift */; };
 		A37095792244F66800488678 /* StarshipsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37095782244F66800488678 /* StarshipsVC.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		8B79BCD498EC3DBB243DD6C6 /* Pods_StarTrivia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarTrivia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A359BE64224A3BB5008D2DE7 /* WhiteBgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteBgView.swift; sourceTree = "<group>"; };
 		A37095742244F64300488678 /* HomeworldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworldVC.swift; sourceTree = "<group>"; };
 		A37095762244F65700488678 /* VehiclesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VehiclesVC.swift; path = "/Users/nicholascoggin/Desktop/Udemy/iOS_12_Course/section_09/app-starTrivia-2/StarTrivia/StarTrivia/Controller/VehiclesVC.swift"; sourceTree = "<absolute>"; };
 		A37095782244F66800488678 /* StarshipsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsVC.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			children = (
 				A39DD68C2231475A00D560BD /* BlackBgView.swift */,
 				A3AC015F2243B0740044D7F7 /* FadeEnabledBtn.swift */,
+				A359BE64224A3BB5008D2DE7 /* WhiteBgView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3AC01602243B0740044D7F7 /* FadeEnabledBtn.swift in Sources */,
+				A359BE65224A3BB5008D2DE7 /* WhiteBgView.swift in Sources */,
 				A3F318262232973900C7A301 /* Person.swift in Sources */,
 				A37095792244F66800488678 /* StarshipsVC.swift in Sources */,
 				A37095772244F65700488678 /* VehiclesVC.swift in Sources */,
