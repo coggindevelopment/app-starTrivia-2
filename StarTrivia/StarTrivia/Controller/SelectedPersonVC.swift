@@ -29,6 +29,7 @@ class SelectedPersonVC: UIViewController {
         super.viewDidLoad()
         
     }
+    
     @IBAction func RandomBtnTapped(_ sender: Any) {
         let random = Int.random(in: 1 ... 87)
         personApi.getRandomPersonAlamo(id: random) { (person) in
