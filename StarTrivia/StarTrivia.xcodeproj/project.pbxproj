@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		42720888441EF09C091BE901 /* Pods_StarTrivia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B79BCD498EC3DBB243DD6C6 /* Pods_StarTrivia.framework */; };
+		A31CFC49225768700020A1D2 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31CFC48225768700020A1D2 /* Vehicle.swift */; };
+		A31CFC4B22576AC80020A1D2 /* VehicleApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31CFC4A22576AC80020A1D2 /* VehicleApi.swift */; };
 		A359BE65224A3BB5008D2DE7 /* WhiteBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A359BE64224A3BB5008D2DE7 /* WhiteBgView.swift */; };
 		A359BE67224A40FF008D2DE7 /* Homeworld.swift in Sources */ = {isa = PBXBuildFile; fileRef = A359BE66224A40FF008D2DE7 /* Homeworld.swift */; };
 		A359BE69224A4194008D2DE7 /* HomeworldApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A359BE68224A4194008D2DE7 /* HomeworldApi.swift */; };
@@ -35,6 +37,8 @@
 
 /* Begin PBXFileReference section */
 		8B79BCD498EC3DBB243DD6C6 /* Pods_StarTrivia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarTrivia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A31CFC48225768700020A1D2 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		A31CFC4A22576AC80020A1D2 /* VehicleApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleApi.swift; sourceTree = "<group>"; };
 		A359BE64224A3BB5008D2DE7 /* WhiteBgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteBgView.swift; sourceTree = "<group>"; };
 		A359BE66224A40FF008D2DE7 /* Homeworld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homeworld.swift; sourceTree = "<group>"; };
 		A359BE68224A4194008D2DE7 /* HomeworldApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworldApi.swift; sourceTree = "<group>"; };
@@ -176,6 +180,7 @@
 				A3F318252232973900C7A301 /* Person.swift */,
 				A359BE66224A40FF008D2DE7 /* Homeworld.swift */,
 				A3CDE83322522B45005C7230 /* Resident.swift */,
+				A31CFC48225768700020A1D2 /* Vehicle.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 				A3F3182322328E9100C7A301 /* PersonApi.swift */,
 				A359BE68224A4194008D2DE7 /* HomeworldApi.swift */,
 				A3CDE83522522C9B005C7230 /* ResidentApi.swift */,
+				A31CFC4A22576AC80020A1D2 /* VehicleApi.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -315,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A31CFC49225768700020A1D2 /* Vehicle.swift in Sources */,
 				A3AC01602243B0740044D7F7 /* FadeEnabledBtn.swift in Sources */,
 				A359BE65224A3BB5008D2DE7 /* WhiteBgView.swift in Sources */,
 				A359BE69224A4194008D2DE7 /* HomeworldApi.swift in Sources */,
@@ -323,6 +330,7 @@
 				A37095792244F66800488678 /* StarshipsVC.swift in Sources */,
 				A37095772244F65700488678 /* VehiclesVC.swift in Sources */,
 				A39DD67222313EAA00D560BD /* SelectedPersonVC.swift in Sources */,
+				A31CFC4B22576AC80020A1D2 /* VehicleApi.swift in Sources */,
 				A3CDE83422522B45005C7230 /* Resident.swift in Sources */,
 				A39DD67022313EAA00D560BD /* AppDelegate.swift in Sources */,
 				A39DD68D2231475A00D560BD /* BlackBgView.swift in Sources */,
