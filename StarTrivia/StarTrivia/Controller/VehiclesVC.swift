@@ -5,6 +5,7 @@
 //  Created by Nicholas Coggin on 3/22/19.
 //
 
+
 import UIKit
 
 class VehiclesVC: UIViewController, PersonProtocol {
@@ -20,6 +21,8 @@ class VehiclesVC: UIViewController, PersonProtocol {
     @IBOutlet weak var passengersLbl: UILabel!
     @IBOutlet weak var capacityLbl: UILabel!
     @IBOutlet weak var consumablesLbl: UILabel!
+    
+    
     @IBOutlet weak var previousBtn: UIButton!
     @IBOutlet weak var nextBtn: UIButton!
     
@@ -30,6 +33,7 @@ class VehiclesVC: UIViewController, PersonProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         vehicles = person.vehicleUrls
         nextBtn.isEnabled = vehicles.count > 1
         previousBtn.isEnabled = false
