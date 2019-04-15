@@ -30,6 +30,8 @@
 		A39DD68D2231475A00D560BD /* BlackBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39DD68C2231475A00D560BD /* BlackBgView.swift */; };
 		A39DD690223147F700D560BD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39DD68F223147F700D560BD /* Constants.swift */; };
 		A3AC01602243B0740044D7F7 /* FadeEnabledBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC015F2243B0740044D7F7 /* FadeEnabledBtn.swift */; };
+		A3BF850822649CFD00646FD3 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BF850722649CFD00646FD3 /* Film.swift */; };
+		A3BF850A22649E3200646FD3 /* FilmApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BF850922649E3200646FD3 /* FilmApi.swift */; };
 		A3CDE83222522569005C7230 /* ResidentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CDE83122522569005C7230 /* ResidentsVC.swift */; };
 		A3CDE83422522B45005C7230 /* Resident.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CDE83322522B45005C7230 /* Resident.swift */; };
 		A3CDE83622522C9B005C7230 /* ResidentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CDE83522522C9B005C7230 /* ResidentApi.swift */; };
@@ -63,6 +65,8 @@
 		A39DD68C2231475A00D560BD /* BlackBgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBgView.swift; sourceTree = "<group>"; };
 		A39DD68F223147F700D560BD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A3AC015F2243B0740044D7F7 /* FadeEnabledBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeEnabledBtn.swift; sourceTree = "<group>"; };
+		A3BF850722649CFD00646FD3 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		A3BF850922649E3200646FD3 /* FilmApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmApi.swift; sourceTree = "<group>"; };
 		A3CDE83122522569005C7230 /* ResidentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidentsVC.swift; sourceTree = "<group>"; };
 		A3CDE83322522B45005C7230 /* Resident.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resident.swift; sourceTree = "<group>"; };
 		A3CDE83522522C9B005C7230 /* ResidentApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidentApi.swift; sourceTree = "<group>"; };
@@ -186,6 +190,7 @@
 				A3CDE83322522B45005C7230 /* Resident.swift */,
 				A31CFC48225768700020A1D2 /* Vehicle.swift */,
 				A330CA7B2260A0EE00301D9E /* Starship.swift */,
+				A3BF850722649CFD00646FD3 /* Film.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 				A3CDE83522522C9B005C7230 /* ResidentApi.swift */,
 				A31CFC4A22576AC80020A1D2 /* VehicleApi.swift */,
 				A330CA792260A0D500301D9E /* StarshipApi.swift */,
+				A3BF850922649E3200646FD3 /* FilmApi.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -337,6 +343,7 @@
 				A37095772244F65700488678 /* VehiclesVC.swift in Sources */,
 				A39DD67222313EAA00D560BD /* SelectedPersonVC.swift in Sources */,
 				A31CFC4B22576AC80020A1D2 /* VehicleApi.swift in Sources */,
+				A3BF850A22649E3200646FD3 /* FilmApi.swift in Sources */,
 				A3CDE83422522B45005C7230 /* Resident.swift in Sources */,
 				A39DD67022313EAA00D560BD /* AppDelegate.swift in Sources */,
 				A39DD68D2231475A00D560BD /* BlackBgView.swift in Sources */,
@@ -344,6 +351,7 @@
 				A370957B2244F67C00488678 /* FilmsVC.swift in Sources */,
 				A330CA7C2260A0EE00301D9E /* Starship.swift in Sources */,
 				A359BE67224A40FF008D2DE7 /* Homeworld.swift in Sources */,
+				A3BF850822649CFD00646FD3 /* Film.swift in Sources */,
 				A330CA7A2260A0D500301D9E /* StarshipApi.swift in Sources */,
 				A37095752244F64300488678 /* HomeworldVC.swift in Sources */,
 				A39DD690223147F700D560BD /* Constants.swift in Sources */,

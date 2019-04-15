@@ -19,3 +19,4 @@ typealias HomeworldResponseCompletion = (Homeworld?) -> Void
 typealias ResidentResponseCompletion = (Resident?) -> Void
 typealias VehicleResponseCompletion = (Vehicle?) -> Void
 typealias StarshipResponseCompletion = (Starship?) -> Void
+typealias FilmResponseCompletion = (Film?) -> Void
