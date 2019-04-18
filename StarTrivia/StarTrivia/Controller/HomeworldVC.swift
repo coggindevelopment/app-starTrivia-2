@@ -17,6 +17,7 @@ class HomeworldVC: UIViewController, PersonProtocol {
     
     @IBOutlet weak var residentsBtn: UIButton!
     @IBOutlet weak var filmsBtn: UIButton!
+    @IBOutlet weak var activityIcon: UIActivityIndicatorView!
     
     var person: Person!
     let homeworldApi = HomeworldApi()
@@ -24,7 +25,9 @@ class HomeworldVC: UIViewController, PersonProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        activityIcon.startAnimating()
         homeworldApi.getHomeworld(url: person.homeworldUrl) { (homeworld) in
+            self.activityIcon.stopAnimating()
             if let homeworld = homeworld {
                 self.setupUi(homeworld: homeworld)
                 self.homeworld = homeworld

@@ -25,6 +25,7 @@ class StarshipsVC: UIViewController, PersonProtocol {
     
     @IBOutlet weak var previousBtn: FadeEnabledBtn!
     @IBOutlet weak var nextBtn: FadeEnabledBtn!
+    @IBOutlet weak var activityIcon: UIActivityIndicatorView!
     
     var person: Person!
     let api = StarshipApi()
@@ -42,7 +43,9 @@ class StarshipsVC: UIViewController, PersonProtocol {
     }
     
     func getStarship(url: String) {
+        activityIcon.startAnimating()
         api.getStarship(url: url) { (starship) in
+            self.activityIcon.stopAnimating()
             if let starship = starship {
                 self.setupView(starship: starship)
             }

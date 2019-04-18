@@ -22,9 +22,9 @@ class VehiclesVC: UIViewController, PersonProtocol {
     @IBOutlet weak var capacityLbl: UILabel!
     @IBOutlet weak var consumablesLbl: UILabel!
     
-    
     @IBOutlet weak var previousBtn: UIButton!
     @IBOutlet weak var nextBtn: UIButton!
+    @IBOutlet weak var activityIcon: UIActivityIndicatorView!
     
     var person: Person!
     let api = VehicleApi()
@@ -42,7 +42,9 @@ class VehiclesVC: UIViewController, PersonProtocol {
     }
     
     func getVehicle(url: String) {
+        activityIcon.startAnimating()
         api.getVehicle(url: url) { (vehicle) in
+            self.activityIcon.stopAnimating()
             if let vehicle = vehicle {
                 self.setupView(vehicle: vehicle)
             }

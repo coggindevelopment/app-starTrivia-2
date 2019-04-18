@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FilmsVC: UIViewController, PersonProtocol {
+class FilmsVC: UIViewController, PersonProtocol, HomeworldProtocol {
     
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var episodeLbl: UILabel!
@@ -19,15 +19,22 @@ class FilmsVC: UIViewController, PersonProtocol {
     
     @IBOutlet weak var previousBtn: UIButton!
     @IBOutlet weak var nextBtn: UIButton!
+    @IBOutlet weak var activityIcon: UIActivityIndicatorView!
     
     var person: Person!
+    var homeworld: Homeworld!
     let api = FilmApi()
     var films = [String]()
     var currentFilm = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        films = person.filmUrls
+        if let personVC = person {
+            films = personVC.filmUrls
+        } else {
+            films = homeworld.films
+        }
+        
         previousBtn.isEnabled = false
         nextBtn.isEnabled = films.count > 1
         guard let firstFilm = films.first else { return }
@@ -35,7 +42,9 @@ class FilmsVC: UIViewController, PersonProtocol {
     }
     
     func getFilm(url: String) {
+        activityIcon.startAnimating()
         api.getFilm(url: url) { (film) in
+            self.activityIcon.stopAnimating()
             if let film = film {
                 self.setupView(film: film)
             }
